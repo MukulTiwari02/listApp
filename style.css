@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive,sans-serif,monospace;
+}
+
+.container{
+    width: 100%;
+    min-height:88vh;
+    max-height: fit-content;
+    padding-bottom: 2vh;
+    /* background: rgb(24,21,66); */
+    background: linear-gradient(-90deg, rgb(25, 19, 110) 0%, rgba(13,13,195,1) 35%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.but,.input-box{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-shadow: black 0px 0px 15px 1px;
+}
+
+.but{
+    position: relative;
+    font-weight: bold;
+    left: -5px;
+    top: -2px;
+    height: 56px;
+    width: 15vw;
+    max-width: 162px;
+    outline: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#b5e48c;
+    border: none;
+}
+
+.but:hover{
+    border: .5px rgba(0, 0, 0, 0.411) solid;
+    cursor:pointer;
+}
+
+.but:active{
+    transform: scale(.9);
+    background-color: #ade8f4;
+}
+
+.input-box{
+    width: 65vw;
+    max-width:700px;
+    background-color: fff;
+    padding-left: 15px;
+    font-size: 20px;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.input-box:hover,.input-box:focus,.input-box:active{
+    border:none;
+    outline: none;
+}
+
+.list-container{
+    width: minmax(30px,fit-content);
+    margin-top: 10px;
+    /* border:2px solid black; */
+    width: 83vw;
+    max-width: 865px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-container > ul{
+    list-style: none;
+}
+
+.list-container > ul > li{
+    border: .1px solid black;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.list-container > ul > li:nth-child(1)
+{
+    border-top: .1px solid black;
+}
+
+.edit-btn, .del-btn{
+    height: 35px;
+    min-width: 80px;
+    max-width: 80px;
+    box-shadow: black 1px 0px 5px 0px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.edit-btn{
+    margin-left: auto;
+    background-color: #fcbf49;
+}
+
+.del-btn{
+    background-color: #f55200;
+}
+
+.del-btn:active, .edit-btn:active{
+    background-color: #0096c7;
+}
+
+.text-edit{
+    height: 55px;
+    font-size: 20px;
+    width: 50vw;
+    max-width: 650px;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    outline: none;
+    border: none;
+    margin-left:auto ;
+}
+
